@@ -47,12 +47,6 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="/home">Домой в Gym</a></li>
                 <li><a class="dropdown-item disabled"><i class="fa fa-address-card-o link-info" aria-hidden="true"></i> В разработке...</a></li>
-                <?php if($_COOKIE['user'] == 'sanekakf'): ?>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><h6 class="dropdown-header">Добро пожаловать Billy</h6></li>
-                  <li><a class="dropdown-item link-danger" href="/home/sanekakf/create"><i class="bi bi-file-plus"></i>Создать товар</a></li>
-                  <li><a class="dropdown-item link-info" href="/redact"><i class="bi bi-pencil link-success"></i>Редактировать предметы</a></li>
-                <?php endif; ?>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Выйти из аккаунта</a></li>
             </ul>
