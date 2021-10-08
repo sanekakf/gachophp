@@ -5,4 +5,3 @@ $username = "lfcjpjxpmcfqxi";
 $password = "70ec9d90f402e4102fb1ea1d8699a2a0c232034016d6edacd6d681093a20772b";
 
 $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
-?>

@@ -11,8 +11,7 @@ if ($s){
     exit();
 }
 else {
-    $res = $conn->query("INSERT INTO users (id, login, password) VALUES($id, '$login', '$pass')");
+    $res = $conn->query("INSERT INTO users (login, password) VALUES('$login', '$pass')");
     setcookie("user", $login, time() + 3600, '/');
     header("Location: /home");
 }
-?>

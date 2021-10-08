@@ -1,21 +1,27 @@
 <?php 
 if ($_COOKIE['user'] == ''){
     header("Location: /");
+    exit();
 }
-else {
-    $user = $_COOKIE['user'];
-    require "../info.php";
-    $conn = new PDO($dsn);
-    $result = $conn->query("SELECT * FROM users WHERE login = '$user'");
-    $user = $result->fetch(PDO::FETCH_ASSOC);
-};
+
+$user = $_COOKIE['user'];
+require "../info.php";
+$conn = new PDO($dsn);
+$result = $conn->query("SELECT * FROM users WHERE login = '$user'");
+$user = $result->fetch(PDO::FETCH_ASSOC);
+$inv = $user['inv'];
+$search = array('{','}','"');
+$inv = str_replace($search, '', $inv);
+$inv = explode(',', $inv);
+
 $citats = array(
     'Устал после gym? Присаживайся и выпей чашечку cum!',
     'Задолбали fucking slaves? Болит рука? Сходи к Jabronies!',
     'Завтра снова в gym, а накопленного cum не хватает? <br> В  нашем магазине есть много cum по выгодным скидкам!',
     'Эти fucking slaves опять порвали твой bondage? Позови Шлёпу на помощь! Он точно отомстит!'
 );
-$best = array_rand($citats, 1)
+$best = array_rand($citats, 1);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,11 +47,40 @@ $best = array_rand($citats, 1)
           <a href="/pricing" class="btn btn-danger btn-lg px-4 me-sm-3 disabled"><span style="font-family:'Source Code Pro', monospace;" title="В разработке...">$BUCKS$</span></a>
           <a href="/logout" class="btn btn-outline-secondary btn-lg px-4 me-sm-3">Выйти с аккаунта</a>
         </div>
+          <hr>
+          <h1>Ваш инвентарь :</h1>
+          <?php if ($user['inv'] != '{}'): ?>
+
+              <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+              <?php for ($i=0; $i<count($inv); $i++): ?>
+                    <?php $res = $conn->query("SELECT * FROM production WHERE name = '$inv[$i]'");
+                        $tovar = $res->fetch(PDO::FETCH_ASSOC);
+                        ?>
+                    <?php if($tovar): ?>
+                  <div class="col">
+
+                      <div class="card mb-4 rounded-3 shadow-sm">
+                          <div class="card-header py-3">
+                              <h4 class="my-0 fw-normal"><?=$tovar['name']?></h4>
+                          </div>
+                          <img src="<?= $tovar['avatarUrl']?>" class="card-img-top" alt="Start Bondage">
+                          <div class="card-body">
+                              <a href="/inventory/?name=<?= $tovar['name']?>" class="w-100 btn btn-lg btn-outline-primary">Посмотреть</a>
+
+                          </div>
+                      </div>
+
+                  </div>
+                  <?php endif; ?>
+              <?php endfor; ?>
+              </div>
+          <?php else: ?>
+          <a href="/pricing" class="btn btn-success">Приобретите что-нибудь</a>
+          <?php endif; ?>
       </div>
     </div>
   </div>    
 
 <?php require "../htmls/footer.php" ?>
-</div>
 </body>
 </html>
