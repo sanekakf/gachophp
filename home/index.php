@@ -65,7 +65,7 @@ $best = array_rand($citats, 1);
                           </div>
                           <img src="<?= $tovar['avatarUrl']?>" class="card-img-top" alt="Start Bondage">
                           <div class="card-body">
-                              <a href="/inventory/?name=<?= $tovar['name']?>" class="w-100 btn btn-lg btn-outline-primary">Посмотреть</a>
+                              <a href="/home/inventory/?name=<?= $tovar['name']?>" class="w-100 btn btn-lg btn-outline-primary">Посмотреть</a>
 
                           </div>
                       </div>
