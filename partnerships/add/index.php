@@ -1,3 +1,19 @@
+<?php 
+if ($_COOKIE['user'] == ''){
+    header('Location: /login');
+    exit();
+} else{
+    $name = $_COOKIE['user'];
+    require "../../info.php";
+    $conn = new PDO($dsn);
+    $res = $conn->query("SELECT admin FROM users WHERE login = '$name'");
+    $admin = $res->fetch(PDO::FETCH_ASSOC);
+    if (!$admin[0]['admin']){
+        header("Location: /404");
+        exit();
+    }
+};
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +21,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gacho Contract</title>
     <?php require "../../htmls/styles.php";
-    if ($_COOKIE['user'] == ''){
-        header('Location: /login');
-        exit();
-    }; ?>
+     ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../../htmls/header.php" ?>
     
 <form method="post" action="add.php">

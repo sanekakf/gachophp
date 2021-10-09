@@ -1,3 +1,15 @@
+<?php 
+$db = "df043ppajn3au9";
+$host = "ec2-54-170-163-224.eu-west-1.compute.amazonaws.com";
+$username = "lfcjpjxpmcfqxi";
+$password = "70ec9d90f402e4102fb1ea1d8699a2a0c232034016d6edacd6d681093a20772b";
+
+$dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
+$conn = new PDO($dsn);
+$username = $_COOKIE['user'];
+$res = $conn->query("SELECT * FROM users WHERE login = '$username'");
+$user = $res->fetch(PDO::FETCH_ASSOC);
+?>
 <header>
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
@@ -22,24 +34,15 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><h6 class="dropdown-header">Партнерства</h6></li>
                 <li><a class="dropdown-item link-danger" href="/partnerships"><i class="bi bi-shield-fill-check"></i>Партнеры</a></li>
+                <?php if ($user['admin']):?>
                 <li><a class="dropdown-item link-info" href="/partnerships/add"><i class="bi bi-pencil"></i>Заключить контракт</a></li>
+                  <?php endif; ?>
             </ul>
         </div>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="/pricing"><i class="bi bi-graph-up"></i>Цены на bondage</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/pricing"><i class="bi bi-currency-dollar"></i>Цены на bondage</a>
       </nav>
         <?php if($_COOKIE['user'] != ''): ?>
-          <?php 
-            $db = "df043ppajn3au9";
-            $host = "ec2-54-170-163-224.eu-west-1.compute.amazonaws.com";
-            $username = "lfcjpjxpmcfqxi";
-            $password = "70ec9d90f402e4102fb1ea1d8699a2a0c232034016d6edacd6d681093a20772b";
-            
-            $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
-            $conn = new PDO($dsn);
-            $username = $_COOKIE['user'];
-            $res = $conn->query("SELECT * FROM users WHERE login = '$username'");
-            $user = $res->fetch(PDO::FETCH_ASSOC);
-          ?>
+          
         <div class="dropdown">
             <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-user-o" aria-hidden="true"></i> <?= $user['login'] ?> 

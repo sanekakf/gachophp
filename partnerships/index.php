@@ -13,7 +13,7 @@ $partner = $res->fetchAll(PDO::FETCH_ASSOC);
     <?php require "../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../htmls/header.php" ?>
 
     <div class="center display-4 fw-bold lh-1 mb-3" >Наши партнеры</div>

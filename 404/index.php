@@ -7,7 +7,7 @@
     <?php require "../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../htmls/header.php" ?>
 
 <div class="container fw-bold ms-5 ">
@@ -21,5 +21,6 @@
 </div>
 
 <?php require "../htmls/footer.php" ?>
+</div>
 </body>
 </html>

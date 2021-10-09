@@ -14,7 +14,7 @@ $tovar = $res -> fetch(PDO::FETCH_ASSOC);
     <?php require "../../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../../htmls/header.php" ?>
 
 <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center  ">

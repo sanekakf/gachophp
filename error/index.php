@@ -14,7 +14,7 @@ if ($_GET['id'] != '') {
     <?php require "../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../htmls/header.php" ?>
     
     <?php if ($error_id == '174'): ?>
@@ -28,6 +28,10 @@ if ($_GET['id'] != '') {
     <?php elseif ($error_id == '407'): ?>
         <div class="pt-5 text-center display-4 fw-bold">
             Страница не найдена
+        </div>
+    <?php elseif ($error_id == '444'): ?>
+        <div class="pt-5 text-center display-4 fw-bold">
+            У вас нет этого предмета
         </div>
     <?php endif; ?>
     

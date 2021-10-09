@@ -32,7 +32,7 @@ $best = array_rand($citats, 1);
     <?php require "../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../htmls/header.php" ?>
     
 <div class="container col-xxl-8 px-4 py-5">
@@ -51,7 +51,7 @@ $best = array_rand($citats, 1);
           <h1>Ваш инвентарь :</h1>
           <?php if ($user['inv'] != '{}'): ?>
 
-              <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+              <div class="row row-cols-1 row-cols-md-2 mb-1 text-center ">
               <?php for ($i=0; $i<count($inv); $i++): ?>
                     <?php $res = $conn->query("SELECT * FROM production WHERE name = '$inv[$i]'");
                         $tovar = $res->fetch(PDO::FETCH_ASSOC);
@@ -82,5 +82,6 @@ $best = array_rand($citats, 1);
   </div>    
 
 <?php require "../htmls/footer.php" ?>
+</div>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <?php require "../htmls/styles.php" ?>
 </head>
 <body>
-<div class=" container py-3"
+<div class=" container py-3">
 <?php require "../htmls/header.php" ?>
     
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
