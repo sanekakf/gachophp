@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
         $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
         $conn = new PDO($dsn);
-        $conn->query("UPDATE users SET avatar = '$newAvatar', description = '$descr'  WHERE login = 'sanekakf' ");
+        $conn->query("UPDATE users SET avatar = '$newAvatar', description = '$descr'  WHERE login = '$user' ");
         header('Location: /home');
     }
 }

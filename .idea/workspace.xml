@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e77150e0-e361-48e2-be8c-4cb0981b4c0d" name="Changes" comment="Inventory Update">
+    <list default="true" id="e77150e0-e361-48e2-be8c-4cb0981b4c0d" name="Changes" comment="PROFILE Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/changeProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/changeProfile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,8 @@
       <workItem from="1633699660994" duration="594000" />
       <workItem from="1633717484817" duration="3639000" />
       <workItem from="1633791167401" duration="1030000" />
+      <workItem from="1634233472220" duration="431000" />
+      <workItem from="1634234621730" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="Inventory Update">
       <created>1633791245265</created>
@@ -70,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633791245266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PROFILE Update">
+      <created>1634233614048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634233614048</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,9 +96,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inventory Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inventory Update" />
+    <MESSAGE value="PROFILE Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="PROFILE Update" />
   </component>
 </project>
