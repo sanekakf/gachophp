@@ -19,19 +19,23 @@ if ($_GET['id'] != '') {
     
     <?php if ($error_id == '174'): ?>
         <div class="pt-5 text-center display-4 fw-bold">
-            Вы ввели неверный Логин или Пароль
+            Вы ввели неверный Логин или Пароль.
         </div>
     <?php elseif ($error_id == '175'): ?>
         <div class="pt-5 text-center display-4 fw-bold">
-            Произошла ошибка на сервере
+            Произошла ошибка на сервере.
         </div>
     <?php elseif ($error_id == '407'): ?>
         <div class="pt-5 text-center display-4 fw-bold">
-            Страница не найдена
+            Страница не найдена.
         </div>
     <?php elseif ($error_id == '444'): ?>
         <div class="pt-5 text-center display-4 fw-bold">
-            У вас нет этого предмета
+            У вас нет этого предмета.
+        </div>
+    <?php elseif ($error_id == '155'): ?>
+        <div class="pt-5 text-center display-4 fw-bold">
+            Неверный тип файла.
         </div>
     <?php endif; ?>
     

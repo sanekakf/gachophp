@@ -1,0 +1,12 @@
+<?php require "../htmls/styles.php"; ?>
+<!--<form method="post" action="ind.php">-->
+<!--<div class="input-group mb-3">-->
+<!--    <input type="file" class="form-control" id="inputGroupFile02" name="img">-->
+<!--    <button class="btn btn-outline-secondary" type="submit" id="inputGroupFileAddon04">Отправить</button>-->
+<!--</div>-->
+<!--</form>-->
+<!-- Тип кодирования данных, enctype, ДОЛЖЕН БЫТЬ указан ИМЕННО так -->
+<form enctype="multipart/form-data" action="ind.php" method="POST">
+    Отправить этот файл: <input name="avatar" type="file" />
+    <input type="submit" value="Отправить файл" name="set_avatar">
+</form>

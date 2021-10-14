@@ -6,10 +6,6 @@
     <!-- ИКОНКИ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="shortcut icon" sizes="32x32" href="https://media.discordapp.net/attachments/681524536344182847/877662922535489606/favicon-32x32.png">
-    <!-- TITLE -->
-    <title>
-        {% block title%}{% endblock %}
-    </title>
     <!-- ШРИФТЫ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
