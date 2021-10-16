@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e77150e0-e361-48e2-be8c-4cb0981b4c0d" name="Changes" comment="PROFILE Update">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/changeProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/changeProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partnerships/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/partnerships/add/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -4,14 +4,6 @@ if ($_COOKIE['user'] == ''){
     exit();
 } else{
     $name = $_COOKIE['user'];
-    require "../../info.php";
-    $conn = new PDO($dsn);
-    $res = $conn->query("SELECT admin FROM users WHERE login = '$name'");
-    $admin = $res->fetch(PDO::FETCH_ASSOC);
-    if (!$admin[0]['admin']){
-        header("Location: /404");
-        exit();
-    }
 };
 ?>
 <!DOCTYPE html>
