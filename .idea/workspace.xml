@@ -33,7 +33,6 @@
     <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -68,7 +67,7 @@
       <workItem from="1634466108616" duration="84000" />
       <workItem from="1634466985161" duration="76000" />
       <workItem from="1634467092928" duration="658000" />
-      <workItem from="1634471033788" duration="1592000" />
+      <workItem from="1634471033788" duration="1671000" />
     </task>
     <task id="LOCAL-00001" summary="Inventory Update">
       <created>1633791245265</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634471857690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PROFILE Update">
+      <created>1634472647187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634472647187</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
