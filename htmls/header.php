@@ -45,7 +45,7 @@ $user = $res->fetch(PDO::FETCH_ASSOC);
           
         <div class="dropdown">
             <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://img.icons8.com/nolan/96/gachi.png" alt="I"/> <?= $user['login'] ?>
+                <img src="https://img.icons8.com/nolan/64/gachi.png" alt="I"/> <?= $user['login'] ?>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="/home">Домой в Gym</a></li>
