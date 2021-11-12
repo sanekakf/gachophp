@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e77150e0-e361-48e2-be8c-4cb0981b4c0d" name="Changes" comment="PROFILE Update">
+      <change afterPath="$PROJECT_DIR$/discord/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discord/wb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmls/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partnerships/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/partnerships/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1zAWa3XFDQI2g5bsYXsUkitMd22" />
   <component name="ProjectLevelVcsManager">
@@ -34,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../OpenServer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,7 +78,14 @@
       <workItem from="1634466108616" duration="84000" />
       <workItem from="1634466985161" duration="76000" />
       <workItem from="1634467092928" duration="658000" />
-      <workItem from="1634471033788" duration="1671000" />
+      <workItem from="1634471033788" duration="2202000" />
+      <workItem from="1634495083300" duration="632000" />
+      <workItem from="1634572559971" duration="389000" />
+      <workItem from="1634573033377" duration="215000" />
+      <workItem from="1634574090283" duration="1012000" />
+      <workItem from="1634839359364" duration="667000" />
+      <workItem from="1636307673962" duration="622000" />
+      <workItem from="1636663265714" duration="2703000" />
     </task>
     <task id="LOCAL-00001" summary="Inventory Update">
       <created>1633791245265</created>
@@ -97,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634472647187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="PROFILE Update">
+      <created>1634472768039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634472768039</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -28,9 +28,6 @@ $partner = $res->fetchAll(PDO::FETCH_ASSOC);
             <a class="display-4 fw-bold lh-1 mb-3" href="<?= $partner[$i]['url'] ?>"><?= $partner[$i]['name'] ?></a>
             <?php endif; ?>
             <p class="lead"><span style="font-family: 'Roboto Mono', monospace;"> <?= $partner[$i]['description']?></span></p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="/partnerships/partner?name=<?= $link ?>" class="btn btn-outline-primary btn-lg px-4 me-sm-3"><i class="bi bi-box-arrow-up-right"></i></a>
-            </div>
         </div>
     </div>
     <?php endfor; ?>
