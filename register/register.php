@@ -1,5 +1,4 @@
 <?php 
-$id = rand(0, 9999);
 $login = $_POST['login'];
 $pass = $_POST['password'];
 $id = 'Не указан';
