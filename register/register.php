@@ -1,4 +1,5 @@
-<?php 
+<?php
+try{ 
 $login = $_POST['login'];
 $pass = $_POST['password'];
 $id = 'Не указан';
@@ -6,7 +7,7 @@ if ($_POST['id'] != ''){
     $id = $_POST['id'];
 }
 if ($pass == ''){
-    header('Location: /error?id=174');
+    // header('Location: /error?id=174');
     exit();
 }
 require "../info.php";
@@ -14,12 +15,15 @@ $conn = new PDO($dsn);
 $rs = $conn->query("SELECT * FROM users WHERE login = '$login'");
 $s = $rs->fetchAll(PDO::FETCH_ASSOC);
 if ($s){
-    header("Location: /error/?id=174");
+    print_r($s);
+    // header("Location: /error/?id=174");
     exit();
 }
 else {
     $res = $conn->query("INSERT INTO users (login, password) VALUES('$login', '$pass')");
     setcookie("user", $login, time() + 3600, '/');
+    header("Location: /home");
+
 //=======================================================================================================
 // Create new webhook in your Discord channel settings and copy&paste URL
 //=======================================================================================================
@@ -137,6 +141,8 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec( $ch );
 // If you need to debug, or find out why you can't send message uncomment line below, and execute script.
 // echo $response;
-curl_close( $ch );
-header("Location : /");
+curl_close($ch);
+}
+}catch (Exception $e){
+ header("Location: /");
 }
