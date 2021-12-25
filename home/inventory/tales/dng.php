@@ -18,7 +18,7 @@
         <iframe id='map' width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-4ZbPm8fpTkRQFHZ593GKEA&key=AIzaSyAynkYzDlWHi8c9tN5s4hAximCsiRwMwxA"></iframe>
         <h3>Отчёт Billy</h3>
         <img id="photo" src="https://media.discordapp.net/attachments/888720944166740028/896353787822866482/mountain.png" class="img-thumbnail" alt="Biily's picture">
-        <p>Как вы можете видеть, Dungeon расположен в очень выгодном для Jabronies месте, ведь проходящие мимо люди видят на вид безопасное место и попоадются в ловушку, где становятся очередными Fucking Slaves</p>
+        <p>Как вы можете видеть, Dungeon расположен в очень выгодном для Jabronies месте, ведь проходящие мимо люди видят безопасное место и поподаются в ловушку, где становятся очередными Fucking Slaves</p>
         <h2>Вход в Dungeon</h2>
         <p>Бесчисленное количество развилок, ловушки, плётка и многое другое уже тут!</p>
         <p class="fw-bold">Для выживания вам нужно:</p>
